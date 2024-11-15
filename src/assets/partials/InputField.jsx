@@ -1,8 +1,17 @@
-import React from 'react';
+import React from "react";
 
-const InputField = ({ label, name, value, onChange, placeholder, type = "text" }) => (
+const InputField = ({
+  label,
+  name,
+  value,
+  onChange,
+  placeholder,
+  type = "text",
+}) => (
   <div className="mb-4">
-    <label htmlFor={name} className="block mb-1">{label}</label>
+    <label htmlFor={name} className="block mb-1">
+      {label}
+    </label>
     <input
       type={type}
       id={name}
@@ -10,7 +19,7 @@ const InputField = ({ label, name, value, onChange, placeholder, type = "text" }
       value={value}
       onChange={onChange}
       placeholder={placeholder}
-      className="w-full p-2 bg-gray-100 rounded text-white"
+      className="w-full p-2 bg-gray-100 rounded text-black"
       required
     />
   </div>
